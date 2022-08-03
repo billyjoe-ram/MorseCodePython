@@ -28,6 +28,7 @@ and lower case letters  when communicating
 by _morse_.
 
 ## Morse Code Reference
+![Morse Code Reference](https://user-images.githubusercontent.com/67481026/182496723-feb7e113-3322-49b0-876e-d7e6424b24a9.jpeg)
 
 ## Checklist
 - [ ] Add Unit Tests
