@@ -22,6 +22,15 @@ class TestMorseInterpreter(unittest.TestCase):
         self.assertEqual(vowel_o, '___')
         self.assertEqual(vowel_u, '.._')
 
+    def test_sentence(self):
+        sentence = 'the quick brown fox jumps over the lazy dog'
+        expected_morse_sentence = "_ .... .   __._ .._ .. _._. _._   _... ._. ___ .__ _.   " \
+                                  ".._. ___ _.._   .___ .._ __ .__. ...   ___ ..._ . ._.   " \
+                                  "_ .... .   ._.. ._ __.. _.__   _.. ___ __. "
+        morse_sentence = self.morse_code.parse_sentence(sentence)
+
+        self.assertEqual(expected_morse_sentence, morse_sentence)
+
 
 if __name__ == '__main__':
     unittest.main()

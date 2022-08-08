@@ -25,3 +25,16 @@ class Morse:
         values = list(self.morse_dict.values())
 
         return keys[values.index(code)]
+
+    def parse_sentence(self, sentence: str) -> str:
+        sentence = sentence.upper()
+        morse_sentence = ""
+
+        for letter in sentence:
+            if letter != ' ':
+                morse_sentence += self.get_morse_code(letter)
+            else:
+                morse_sentence += ' '
+            morse_sentence += ' '
+
+        return morse_sentence
