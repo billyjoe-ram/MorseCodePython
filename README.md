@@ -32,4 +32,4 @@ by _morse_.
 
 ## Checklist
 - [x] Add Unit Tests
-- [ ] Add text base interface
+- [x] Add text base interface
